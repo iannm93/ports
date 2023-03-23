@@ -1,0 +1,64 @@
+body{
+    background-color:#f8f4ff;
+}
+.navbar {
+    width: 100%;
+    background-color: #f8f4ff;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color:linear-gradient(#ba9ef9,#cdb8fd) ;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+background: linear-gradient(#ba9ef9,#cdb8fd);
+
+  }
+form{
+    margin: 0 auto;
+    width: 60%;
+
+}
+#input{
+    border-radius: 25px;
+    background-color: #ddd6ff;
+}
+input, select, textarea{
+    color: #573beb;
+
+
+}
+#formButton{
+    border-radius: 25px;
+    width: 170px;
+    color: black;
+    border: 2px solid black;
+    background-color: #f8f4ff;
+    font-weight: 500;
+}
+
+#formButton:hover{
+    transform: scale(1.03) translateY(-3px);
+    transition: .3s ease-in;
+}
+@media (max-width: 1364px){
+    form{
+        width: 70%;
+        
+    }
+  
+}
