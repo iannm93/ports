@@ -1,0 +1,90 @@
+.navbar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color:linear-gradient(#ba9ef9,#cdb8fd) ;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+background: linear-gradient(#ba9ef9,#cdb8fd);
+
+  }
+
+  #background-image{
+    background: linear-gradient(#ba9ef9,#cdb8fd);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  #flexbox{
+    display: flex;
+    width: 100%;
+    background-color: blue;
+    height: 400px;
+    justify-content: center;
+  }
+  
+  #box-one{
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    width: 50%;
+    background: red;
+  }
+  #box-two{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    background-color: green;
+  }
+  .side-by-side{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}  
+
+#left{
+    height: 100vh;
+    background: linear-gradient(#ba9ef9,#cdb8fd);
+}
+#right{
+    height: 100vh;
+    background: linear-gradient(#ba9ef9,#cdb8fd);
+}
+#left-text{
+    margin-top: 6em;
+}
+
+#kali-selfie{
+    height: 80vh;
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('../img/kali-selfie.PNG');
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}

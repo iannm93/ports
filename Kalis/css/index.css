@@ -136,7 +136,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     width: 100px;
     padding: 20px
 }
-orang
+
 #linkedIcon:hover {
     cursor: pointer;
 }
@@ -312,7 +312,7 @@ orang
   
   /* Add a background color on mouse-over */
   .navbar a:hover {
-    background-color: t;
+    background: linear-gradient(#ba9ef9,#cdb8fd);
   }
   
   /* Style the current/active link */
