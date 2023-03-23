@@ -1,0 +1,104 @@
+/* NAVBAR S */
+.navbar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: t;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+background: linear-gradient(#ba9ef9,#cdb8fd);
+
+  }
+  
+/* NABAR E */
+
+/* GRID S */
+.me-ok{
+    height: 250px;
+    width: 250px;
+}
+.me-ok:hover{
+    transform: rotate(15deg);
+    transition: ease-in .2s;
+}
+#flexbox-top{
+    height: 200px;
+}
+
+#grid {
+
+
+    display: grid;
+    /* gap: 2em; */
+    width: 90%;
+    /* grid-auto-flow: revert; */
+
+    grid-template-columns: repeat(3, 500px);
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+}
+#flex-box{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+
+}
+#ui-ux{
+    width: 45%;
+}
+#graphic-design{
+    width: 45%;
+}
+
+.purp{
+    color: #ba9ef9;
+}
+
+
+@media screen and (max-width: 1545px) {
+    
+    #grid {
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        grid-auto-flow: revert;
+        grid-template-columns: repeat(2, 400px);
+        justify-content: center;
+        justify-items: center;
+        border-radius: 10%;
+        /* padding-top: 7em; */
+    }
+    
+    
+}
+
+@media screen and (max-width: 871px) {
+
+    #grid {
+        column-gap: 20px;
+        display: grid;
+        grid-auto-flow: revert;
+        grid-template-columns: repeat(1, 400px);
+        justify-content: center;
+        justify-items: center;
+        /* padding-top: 7em; */
+    }
+}
+/* GRID E */
