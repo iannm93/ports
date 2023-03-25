@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Main';
+
+    src: url("../Synthemesc-W00-Regular.ttf");
+  }
 .navbar {
     width: 100%;
     background-color: white;
@@ -34,9 +39,13 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     background-position: center center;
   }
 
-  
+  h1{
+    font-family: 'Main';
+  }
 
-
+#me{
+    font-size: 20vh;
+}
 
 
 .float-child {
@@ -55,4 +64,11 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 .socials{
   height: 50px;
   width: 50px;
+}
+
+@media (max-width: 1371px){
+    /* #background-image{
+        height: 120vh;
+    } */
+
 }

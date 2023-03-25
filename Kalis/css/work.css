@@ -1,3 +1,11 @@
+/* GLOBAL S*/
+@font-face {
+    font-family: 'Main';
+
+    src: url("../Synthemesc-W00-Regular.ttf");
+  }
+/* GLOBAL E */
+
 /* NAVBAR S */
 .navbar {
     width: 100%;
@@ -30,6 +38,9 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 /* NABAR E */
 
 /* GRID S */
+.font-st{
+    font-family: 'Main';
+}
 .me-ok{
     height: 250px;
     width: 250px;
@@ -39,7 +50,9 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     transition: ease-in .2s;
 }
 #flexbox-top{
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #grid {
@@ -111,6 +124,11 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     #img7{
         height: auto;
         width: 300px;
+    }
+    #flexbox-top{
+        height: 200px;
+        display: inline-block;
+       margin: 0 auto;
     }
 }
 /* GRID E */

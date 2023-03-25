@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Main';
+
+    src: url("../Synthemesc-W00-Regular.ttf");
+  }
+  h1{
+    font-family: 'Main';
+  }
 body{
     background-color:#f8f4ff;
 }
@@ -36,11 +44,11 @@ form{
 #input{
     border-radius: 25px;
     background-color: #ddd6ff;
+    font-weight: bolder;
 }
-input, select, textarea{
-    color: #573beb;
 
-
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:  #573beb !important;
 }
 #formButton{
     border-radius: 25px;
