@@ -76,7 +76,7 @@ h1{
   }
 #box {
     /* position: absolute; */
-    min-height: 100vh;
+    height: 100vh;
     padding: 0;
     width: 100%;
 /* Created with https://www.css-gradient.com */
