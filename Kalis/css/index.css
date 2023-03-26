@@ -8,7 +8,9 @@
     background-color:#f8f4ff  !important;
 }
 /* GLOBAL E */
-
+h1{
+    font-family: 'Main';
+}
 #margin-for-ptag {
     margin-left: 38%;
     font-size: 25px;
@@ -334,15 +336,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
   }
  
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: left; /* If you want the text to be left-aligned on small screens */
-    }
-  }
-  
+
 
   
 .grid2 {
