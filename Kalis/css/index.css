@@ -1,14 +1,13 @@
-/* #center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+/* GLOBAL S */
 @font-face {
     font-family: 'Main';
 
     src: url("../Synthemesc-W00-Regular.ttf");
   }
-
+  body{
+    background-color:#f8f4ff  !important;
+}
+/* GLOBAL E */
 
 #margin-for-ptag {
     margin-left: 38%;
@@ -298,7 +297,8 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 
 .navbar {
     width: 100%;
-    background-color: white;
+    background-color:#f8f4ff;
+
     overflow: auto;
   }
   
@@ -309,21 +309,30 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     color: black;
     text-decoration: none;
     font-size: 17px;
-    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
-  }
-  
-  /* Add a background color on mouse-over */
-  .navbar a:hover {
-    background: linear-gradient(#ba9ef9,#cdb8fd);
-  }
-  
-  /* Style the current/active link */
-  .navbar a.active {
-background: linear-gradient(#ba9ef9,#cdb8fd);
+    background-color:#f8f4ff;
+      
+    transition: all 1s ease-out;
 
   }
   
+  /* Add a background color on mouse-over */
+
+    
+    .navbar a:hover {
+        
+        background: linear-gradient(#ba9ef9,#cdb8fd);
+        
+        
+    }
+  /* Style the current/active link */
+  .navbar a.active {
+     
+      background: linear-gradient(#ba9ef9,#cdb8fd);
+
+  }
+ 
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
   @media screen and (max-width: 500px) {
     .navbar a {
@@ -339,7 +348,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 .grid2 {
     display: grid;
     gap: 2.5em;
-    ;
+    
     /* grid-auto-flow: revert; */
 
     grid-template-rows: repeat(2, 100px);
