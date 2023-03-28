@@ -1,32 +1,33 @@
-let cardOne = document.getElementById("card1") 
-let images = document.querySelector("#grid") 
+let cardOne = document.getElementById("card1");
+let images = document.querySelector("#grid");
 
 // let images = document.images
 let illustrations = document.querySelector(".purp");
 let temp = window.getComputedStyle(illustrations).getPropertyValue("opacity");
+let graphic = document.querySelector(".font-st");
 let myInterval;
 let intervalTwo;
 
+let fadeIllustrationsIn = () => {
+  let fadeOpacity = Number(
+    window.getComputedStyle(images).getPropertyValue("opacity")
+  );
+  // if the opacity is less than 1,  add 10% of the original opacity.
+  if (fadeOpacity < 1) {
+    fadeOpacity = fadeOpacity + 0.1;
+    images.style.opacity = fadeOpacity;
+    graphic.style.opacity = fadeOpacity;
+  } else {
+    console.log("interval two has cleared");
+    clearInterval(intervalTwo);
+  }
+};
 
-let fadeIn = () =>{
-        let fadeOpacity = Number(
-                window.getComputedStyle(images).getPropertyValue("opacity")
-              );
-              console.log(fadeOpacity)
-              // if the opacity is less than 1,  add .005 to all the below elements' opacity
-              if (fadeOpacity < 1) {
-                fadeOpacity = fadeOpacity + 0.1;
-               images.style.opacity = fadeOpacity
-               console.log(images.style.opacity)
-              } else{
-                      console.log("interval two has cleared")        
-                      clearInterval(intervalTwo)
-                } 
-}
-
-let newPic = () =>{
-   
-        images.innerHTML = `           <a href="https://online.fliphtml5.com/vnnyr/abxc/#p=1"><img  id="img1" class="img7 img-fluid"
+let newPic = () => {
+  console.log("new pic running, interval two starting now");
+  // opacity is currently 0, change all dom content needed
+  graphic.textContent = "illustrations";
+  images.innerHTML = `           <a href="https://online.fliphtml5.com/vnnyr/abxc/#p=1"><img  id="img1" class="img7 img-fluid"
         src="img/dropouts mock.png"
          alt="Honey Ginger Magazine front, back and spine"></a>
 
@@ -50,50 +51,38 @@ let newPic = () =>{
     alt="Kalani Surf School Design on white T shirt">
 
 
-`
-                intervalTwo = setInterval(fadeIn, 100)
-        
-}
-let fadeOut = function () {
-        console.log("loop one running")
-        let fadeOpacity = Number(
-          window.getComputedStyle(images).getPropertyValue("opacity")
-        );
-        console.log(fadeOpacity)
-        // if the opacity is less than 1,  add .005 to all the below elements' opacity
-        if (fadeOpacity > 0) {
-          fadeOpacity = fadeOpacity - 0.1;
-         images.style.opacity = fadeOpacity
-         console.log(images.style.opacity)
-        } else{
-           newPic()
-           clearInterval(myInterval)
-           console.log("interval one has cleared")        
-           
-        }
-     
-      };
+`;
+  intervalTwo = setInterval(fadeIllustrationsIn, 1000);
+};
+let fadeIllustrationsOut = function () {
+  let fadeOpacity = Number(
+    window.getComputedStyle(images).getPropertyValue("opacity")
+  );
+  // if the opacity is less than 1,  add .005 to all the below elements' opacity
+  if (fadeOpacity > 0) {
+    fadeOpacity = fadeOpacity - 0.1;
+    images.style.opacity = fadeOpacity;
+    graphic.style.opacity = fadeOpacity;
+  } else {
+    clearInterval(myInterval);
+    console.log("interval one has cleared");
+    newPic();
+  }
+};
 
-    
-
-     
-
-      
-  
 // console.log(images.length)
-    // images.style.cssText = `transform-origin: -200% -200%;
-    //                         transform: rotate(35deg);
-    //                         transition: .5s ease-in `
-    
+// images.style.cssText = `transform-origin: -200% -200%;
+//                         transform: rotate(35deg);
+//                         transition: .5s ease-in `
 
 // slideOne()
-let startFade = ()=>{
-        console.log("start fade has run")
- myInterval = setInterval(fadeOut, 50)
-} 
-    
-        // images[i].style.cssText=`transform-origin: -200% -200%;
-        //                       transform: rotate(35deg);
-        //                       transition: .5s ease-in`
-    
-illustrations.addEventListener("click", startFade)
+let startFade = () => {
+  console.log("start fade has run, fade out starting now");
+  myInterval = setInterval(fadeIllustrationsOut, 1000);
+};
+
+// images[i].style.cssText=`transform-origin: -200% -200%;
+//                       transform: rotate(35deg);
+//                       transition: .5s ease-in`
+
+illustrations.addEventListener("click", startFade);
