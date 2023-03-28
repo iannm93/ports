@@ -7,16 +7,21 @@ let temp = window.getComputedStyle(illustrations).getPropertyValue("opacity");
 let graphic = document.querySelector(".font-st");
 let myInterval;
 let intervalTwo;
+let b = 0;
+let a = 0;
+
 
 let fadeIllustrationsIn = () => {
-  let fadeOpacity = Number(
-    window.getComputedStyle(images).getPropertyValue("opacity")
+        let fadeOpacity = Number(
+                window.getComputedStyle(images).getPropertyValue("opacity")
   );
   // if the opacity is less than 1,  add 10% of the original opacity.
   if (fadeOpacity < 1) {
-    fadeOpacity = fadeOpacity + 0.1;
+          fadeOpacity = fadeOpacity + 0.1;
     images.style.opacity = fadeOpacity;
     graphic.style.opacity = fadeOpacity;
+    b++
+    console.log("b=", b)
   } else {
     console.log("interval two has cleared");
     clearInterval(intervalTwo);
@@ -52,17 +57,19 @@ let newPic = () => {
 
 
 `;
-  intervalTwo = setInterval(fadeIllustrationsIn, 1000);
+  intervalTwo = setInterval(fadeIllustrationsIn, 100);
 };
 let fadeIllustrationsOut = function () {
-  let fadeOpacity = Number(
-    window.getComputedStyle(images).getPropertyValue("opacity")
-  );
-  // if the opacity is less than 1,  add .005 to all the below elements' opacity
-  if (fadeOpacity > 0) {
+        let fadeOpacity = Number(
+                window.getComputedStyle(images).getPropertyValue("opacity")
+                );
+                // if the opacity is less than 1,  add .005 to all the below elements' opacity
+                if (fadeOpacity > 0) {
     fadeOpacity = fadeOpacity - 0.1;
     images.style.opacity = fadeOpacity;
     graphic.style.opacity = fadeOpacity;
+    a++
+    console.log("a=",a)
   } else {
     clearInterval(myInterval);
     console.log("interval one has cleared");
@@ -78,7 +85,7 @@ let fadeIllustrationsOut = function () {
 // slideOne()
 let startFade = () => {
   console.log("start fade has run, fade out starting now");
-  myInterval = setInterval(fadeIllustrationsOut, 1000);
+  myInterval = setInterval(fadeIllustrationsOut, 100);
 };
 
 // images[i].style.cssText=`transform-origin: -200% -200%;
