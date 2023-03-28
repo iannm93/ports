@@ -81,7 +81,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     width: 45%;
 }
 
-.purp{
+.purple{
     color: #ba9ef9;
 }
 
@@ -126,9 +126,12 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
         width: 300px;
     }
     #flexbox-top{
-        height: 200px;
-        display: inline-block;
-       margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(1, 7em);
+    }
+    .me-ok{
+        height: 200x;
+        width: 200px;
     }
 }
 /* GRID E */
