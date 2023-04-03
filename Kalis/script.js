@@ -11,6 +11,7 @@ let rightLink = document.querySelector(".purp")
 
 let graphic = document.querySelector(".font-st")
 let temp = window.getComputedStyle(leftLink).getPropertyValue("opacity");
+let isItRunning = 2;
 let myInterval;
 
 // KALI LOOK FOR THIS WHEN YOU'RE UPDATING YOUR PICTURES
@@ -18,6 +19,8 @@ let updateContent = (targetVal) =>{
   if(targetVal.includes("illustrations")){
 
     leftLink.innerHTML = `< see graphic designs`;
+    rightLink.innerHTML = `see ui/ux designs >`;
+
     logo.src = "./img/me_ok.png";
     graphic.textContent = "illustration";
     // put all your pictures for the illustrations grid inside the variable below
@@ -31,6 +34,8 @@ let updateContent = (targetVal) =>{
   } 
   else if (targetVal.includes("graphic")){
     leftLink.innerHTML = `< see illustrations`;
+    rightLink.innerHTML = `see ui/ux designs >`;
+
   logo.src = "./img/me_point.png";
   graphic.textContent = "graphic design";
     // put all your pictures for the graphic designs grid inside the variable below
@@ -44,14 +49,15 @@ let updateContent = (targetVal) =>{
 
   } 
   else if (targetVal.includes("ux")){
-    leftLink.innerHTML = `see illustrations >`;
+    leftLink.innerHTML = ` < see illustrations `;
+    rightLink.innerHTML = "see graphic designs >"
   logo.src = "./img/me_thumbs.png";
   graphic.textContent = "UX/UI";
     // put all your pictures for the ux/ui grid inside the variable below
   images.innerHTML = 
   `
   <div id="card1" class="card mx-auto" style="max-width: 50vh;">
-       <a href="https://heyzine.com/flip-book/08c238dc66.html" target="_blank"><img id="img7" class="img-fluid"
+       <a id = "img7" href="https://heyzine.com/flip-book/08c238dc66.html" target="_blank"><img id="img7" class="img-fluid"
         src="img/ppboo.png"
         class="card-img-top" alt="The Pretty Penguin book cover"></a>
        <div class="card-body">
@@ -98,6 +104,7 @@ let fade = (targetVal, endOpacity)=>{
     window.getComputedStyle(images).getPropertyValue("opacity")
   );
   console.log("fade")
+  isItRunning += 1 
 
   if (fadeOpacity !== endOpacity) {
     console.log(fadeOpacity, endOpacity)
@@ -112,6 +119,7 @@ let fade = (targetVal, endOpacity)=>{
 
     if (fadeOpacity === endOpacity && endOpacity === 1){
       clearInterval(myInterval)
+      isItRunning = 2
     }
     if (fadeOpacity === endOpacity && endOpacity===0){
       clearInterval(myInterval)
@@ -119,22 +127,32 @@ let fade = (targetVal, endOpacity)=>{
     }
 }
 
-// conditional statements that dictate which id is being assigned to fadeout interval
+// conditional statements that dictate which id is being assigned to fadeout interval 
 let linkInterval = (event) => {
   console.log("start fade has run, fade out starting now");
   let targetVal = event.target.innerText;
-  console.log(targetVal)
-  if (targetVal.includes("illustrations")) {
-  
-    console.log("illus");
-    myInterval = setInterval(fade, 60, targetVal, 0);
-  } else if (targetVal.includes("graphic")) {
-    console.log("des");
-    console.log(targetVal)
-    myInterval = setInterval(fade, 60, targetVal, 0);
-  } else if (targetVal.includes("ui")){
-    console.log("ui")
-    myInterval = setInterval(fade, 60, targetVal, 0)
+  if (isItRunning === 2){
+
+      if (targetVal.includes("illustrations")) {
+      
+        console.log("illus");
+        myInterval = setInterval(fade, 60, targetVal, 0);
+      } else if (targetVal.includes("graphic")) {
+        console.log("des");
+        console.log(targetVal)
+        myInterval = setInterval(fade, 60, targetVal, 0);
+      } else if (targetVal.includes("ui")){
+        console.log("ui")
+        myInterval = setInterval(fade, 60, targetVal, 0)
+      }
   }
+  let endTime = dates[-1] +2600
+  if (endTime > Date.now() ){
+    console.log("etst")
+      
+  
+  }
+
+  console.log(targetVal)
 };
 links.addEventListener("click", linkInterval);

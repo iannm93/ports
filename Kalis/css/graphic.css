@@ -123,7 +123,8 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 
     .img7{
         height: auto;
-        width: 300px;
+        height: 250px  !important;
+        width: 372.5px !important;
     }
     #flexbox-top{
         display: grid;
@@ -131,8 +132,29 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
         justify-items: center;
     }
     .me-ok{
-        height: 200x;
-        width: 200px;
+     display: none;
     }
+}
+.img7{
+    height: 300px;
+    width: 447px;
+}
+#card1:hover>#img7 {
+    transform: scale(1.02);
+    transition: 500ms;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+
+
+
+}
+#card1{
+    border: none;
+}
+
+.img7:hover{
+    transform: scale(1.02);
+    transition: 500ms;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+
 }
 /* GRID E */
