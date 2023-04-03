@@ -57,7 +57,7 @@ let updateContent = (targetVal) =>{
   images.innerHTML = 
   `
   <div id="card1" class="card mx-auto" style="max-width: 50vh;">
-       <a id = "img7" href="https://heyzine.com/flip-book/08c238dc66.html" target="_blank"><img id="img7" class="img-fluid"
+       <a id = "img7" href="contact.html" target="_blank"><img id="img7" class="img-fluid"
         src="img/ppboo.png"
         class="card-img-top" alt="The Pretty Penguin book cover"></a>
        <div class="card-body">

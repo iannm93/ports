@@ -1,0 +1,11 @@
+#dropouts-container{
+    height: 70vh;
+    width: 100%;
+    background-color: pink;
+}
+
+#project-container{
+    height: 30vh;
+    width: 49%;
+    background-color: blue;
+}
