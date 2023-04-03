@@ -147,6 +147,9 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 
 
 }
+a:hover{
+    cursor: pointer;
+}
 #card1{
     border: none;
 }

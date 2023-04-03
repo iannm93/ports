@@ -136,14 +136,14 @@ let linkInterval = (event) => {
       if (targetVal.includes("illustrations")) {
       
         console.log("illus");
-        myInterval = setInterval(fade, 60, targetVal, 0);
+        myInterval = setInterval(fade, 40, targetVal, 0);
       } else if (targetVal.includes("graphic")) {
         console.log("des");
         console.log(targetVal)
-        myInterval = setInterval(fade, 60, targetVal, 0);
+        myInterval = setInterval(fade, 40, targetVal, 0);
       } else if (targetVal.includes("ui")){
         console.log("ui")
-        myInterval = setInterval(fade, 60, targetVal, 0)
+        myInterval = setInterval(fade, 40, targetVal, 0)
       }
   }
   let endTime = dates[-1] +2600
