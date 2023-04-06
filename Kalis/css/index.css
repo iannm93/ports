@@ -69,11 +69,6 @@ h1{
 #more-about-me-text {
     padding: 35px;
 }
-@media (max-width: 748px){
-    #box{
-        min-height: 50vh !important; 
-    }
-  }
 #box {
     /* position: absolute; */
     height: 100vh;
@@ -83,6 +78,11 @@ h1{
 /* Created with https://www.css-gradient.com */
 background: linear-gradient(#ba9ef9,#cdb8fd);
 }
+@media (max-width: 890px){
+    #box{
+    height: 60vh; 
+    }
+  }
 
 @media screen and (max-width: 1203px) {
 

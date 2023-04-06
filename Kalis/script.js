@@ -56,40 +56,57 @@ let updateContent = (targetVal) =>{
     // put all your pictures for the ux/ui grid inside the variable below
   images.innerHTML = 
   `
-  <div id="card1" class="card mx-auto" style="max-width: 50vh;">
-       <a id = "img7" href="contact.html" target="_blank"><img id="img7" class="img-fluid"
-        src="img/ppboo.png"
-        class="card-img-top" alt="The Pretty Penguin book cover"></a>
-       <div class="card-body">
-      <h5 class="card-title">The Pretty Penguin</h5>
-      <p class="card-text">Childrens book. Click <a href="https://heyzine.com/flip-book/08c238dc66.html">here</a> to view.</p>
-      </div>
-  </div>
-  <div id="card1" class="card mx-auto" style="max-width: 50vh;">
-  <a href="https://heyzine.com/flip-book/08c238dc66.html"><img id="img7" class="img-fluid"
-   src="img/ppboo.png"
-   class="card-img-top" alt="The Pretty Penguin book cover"></a>
+  <div id="card1" class="card mx-auto" style="max-width: 50vh">
+  <a href="https://heyzine.com/flip-book/08c238dc66.html"
+  ><img
+      id="img7"
+      class="img-fluid"
+      src="img/ppboo.png"
+      class="card-img-top"
+      alt="The Pretty Penguin book cover"
+  /></a>
   <div class="card-body">
- <h5 class="card-title">The Pretty Penguin</h5>
- <p class="card-text">Childrens book. Click <a href="https://heyzine.com/flip-book/08c238dc66.html">here</a> to view.</p>
- </div>
+  <h5 class="card-title">The Pretty Penguin</h5>
+  <p class="card-text">
+      Childrens book. Click
+      <a href="https://heyzine.com/flip-book/08c238dc66.html">here</a> to view.
+  </p>
+  </div>
 </div>
-<div id="card1" class="card mx-auto" style="max-width: 50vh;">
-<a href="https://heyzine.com/flip-book/08c238dc66.html"><img id="img7" class="img-fluid"
- src="img/ppboo.png"
- class="card-img-top" alt="The Pretty Penguin book cover"></a>
+
+<div id="card1" class="card mx-auto" style="max-width: 50vh">
+  <a href="https://heyzine.com/flip-book/08c238dc66.html"
+  ><img
+      id="img7"
+      class="img-fluid"
+      src="img/ppboo.png"
+      class="card-img-top"
+      alt="The Pretty Penguin book cover"
+  /></a>
+  <div class="card-body">
+  <h5 class="card-title">The Pretty Penguin</h5>
+  <p class="card-text">
+      Childrens book. Click
+      <a href="https://heyzine.com/flip-book/08c238dc66.html">here</a> to view.
+  </p>
+  </div>
+</div>
+
+<div id="card1" class="card mx-auto" style="max-width: 50vh">
+<a href="https://heyzine.com/flip-book/08c238dc66.html"
+><img
+  id="img7"
+  class="img-fluid"
+  src="img/ppboo.png"
+  class="card-img-top"
+  alt="The Pretty Penguin book cover"
+/></a>
 <div class="card-body">
 <h5 class="card-title">The Pretty Penguin</h5>
-<p class="card-text">Childrens book. Click <a href="https://heyzine.com/flip-book/08c238dc66.html">here</a> to view.</p>
-</div>
-</div>
-<div id="card1" class="card mx-auto" style="max-width: 50vh;">
-<a href="https://heyzine.com/flip-book/08c238dc66.html"><img id="img7" class="img-fluid"
- src="img/ppboo.png"
- class="card-img-top" alt="The Pretty Penguin book cover"></a>
-<div class="card-body">
-<h5 class="card-title">The Pretty Penguin</h5>
-<p class="card-text">Childrens book. Click <a href="https://heyzine.com/flip-book/08c238dc66.html">here</a> to view.</p>
+<p class="card-text">
+  Childrens book. Click
+  <a href="https://heyzine.com/flip-book/08c238dc66.html">here</a> to view.
+</p>
 </div>
 </div>
 `;
