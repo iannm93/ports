@@ -10,7 +10,6 @@ let leftLink = document.querySelector(".purple")
 let rightLink = document.querySelector(".purp")
 
 let graphic = document.querySelector(".font-st")
-let temp = window.getComputedStyle(leftLink).getPropertyValue("opacity");
 let isItRunning = 2;
 let myInterval;
 

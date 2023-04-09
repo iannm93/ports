@@ -36,6 +36,7 @@ body{
 background: linear-gradient(#ba9ef9,#cdb8fd);
 
   }
+
 .body-container{
     
     height: 100%;
@@ -66,7 +67,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     }
     #grid{
         display: grid;
-        gap: 0em;
+        gap: 1em;
         grid-template-columns: repeat(1, 1fr);
     }
 }

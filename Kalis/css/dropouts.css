@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Main';
+
+    src: url("../Synthemesc-W00-Regular.ttf");
+  }
+  h1{
+    font-family: 'Main';
+  }
+body{
+    background-color:#f8f4ff !important ;
+}
+.navbar {
+    width: 100%;
+    background-color: #f8f4ff;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color:linear-gradient(#ba9ef9,#cdb8fd) ;
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+background: linear-gradient(#ba9ef9,#cdb8fd);
+
+  }
+.body-container{
+    
+    height: 100%;
+    width: 65%;
+    background-color: #f8f4ff;
+}
+#pop{
+    width: 700px;
+    height:  469.7px;
+    background-color: blue;
+
+}
+#dropouts-mock{
+    object-fit: cover;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 1em;
+    background-color: aqua;
+}
+@media (max-width: 871px){
+    .body-container{
+        width: 95%;
+        height: 100%;
+    }
+    #grid{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
