@@ -4,7 +4,7 @@
     src: url("../Synthemesc-W00-Regular.ttf");
   }
   h1{
-    font-family: 'Main';
+    font-family: 'Poppins';
   }
 body{
     background-color:#f8f4ff !important ;
@@ -69,4 +69,10 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
         gap: 1em;
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.button{
+  border: none;
+  font-family: 'poppins';
+
 }

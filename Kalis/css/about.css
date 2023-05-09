@@ -3,36 +3,43 @@
 
     src: url("../Synthemesc-W00-Regular.ttf");
   }
-.navbar {
+  .navbar {
     width: 100%;
-    background-color: white;
     overflow: auto;
   }
   
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    padding: 12px;
-    color: black;
+   /* Navigation links */
+   .navbar a {
+    /* float: left; */
+    /* padding: 12px; */
+    font-family: 'Poppins', sans-serif !important;
+    color: #150142;
     text-decoration: none;
     font-size: 17px;
-    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
+    width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /*If you want the text to be centered*/
+      
+    /* transition: all 1s ease-out; */
+
   }
-  
+
+
   /* Add a background color on mouse-over */
-  .navbar a:hover {
-    background-color:linear-gradient(#ba9ef9,#cdb8fd) ;
-  }
+  .navbar a:hover {     
+    color: white;
+    overflow-x: hidden;
+    transform: translateY(-5px);
+    transition: all .1s ease-in;
+    letter-spacing: .1em;
+}
   
   /* Style the current/active link */
   .navbar a.active {
-background: linear-gradient(#ba9ef9,#cdb8fd);
-
+    font-weight: 600;
   }
-
+  
   #background-image{
-    background-image: url("../img/meagain2.png");
+    background-image: url("../img/meagain2.png"); 
     min-height: 100vh;
     width: 100%;
     background-size: cover;
@@ -41,6 +48,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 
   h1{
     font-family: 'Main';
+    color: #150142;
   }
 
 #me{
@@ -65,6 +73,17 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
   height: 50px;
   width: 50px;
 }
+h6{
+  font-family: 'poppins';
+  font-weight: 400;
+  line-height: 1.5em;
+  text-justify: auto;
+  color: #150142;
+}
+h5{
+  font-family: 'poppins';
+  font-size: 18px;
+}
 
 @media (max-width: 1562px){
     #background-image{
@@ -84,7 +103,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
         height: 165vh;
         width: 100%;
         background-size: cover;
-        background-position: center center;
+        background-position: left;
       }
  
 }

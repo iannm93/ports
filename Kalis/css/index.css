@@ -1,11 +1,21 @@
 /* GLOBAL S */
+
+img{
+    border-radius: 5%;
+}
 @font-face {
     font-family: 'Main';
 
     src: url("../Synthemesc-W00-Regular.ttf");
   }
   body{
-    background-color:#f8f4ff  !important;
+    background-color:#f8f4ff;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: #ba9ef9 !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 /* GLOBAL E */
 h1{
@@ -28,6 +38,7 @@ h1{
 .card {
 
     border: none !important;
+    background: transparent;
 }
 
 #me-img{
@@ -108,6 +119,7 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
         grid-template-columns: repeat(1, 400px);
         justify-content: center;
         justify-items: center;
+        padding-bottom: 7em;
         /* padding-top: 7em; */
     }
 
@@ -299,23 +311,22 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
 
 .navbar {
     width: 100%;
-    background-color:#f8f4ff;
-
+    background-color: #ba9ef9;
     overflow: auto;
   }
   
   /* Navigation links */
   .navbar a {
-    float: left;
-    padding: 12px;
-    color: black;
+    /* float: left; */
+    /* padding: 12px; */
+    color: #8a72ff;
     text-decoration: none;
     font-size: 17px;
     width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
-    background-color:#f8f4ff;
+    text-align: center; /*If you want the text to be centered*/
+    background-color:#ba9ef9 ;
       
-    transition: all 1s ease-out;
+    /* transition: all 1s ease-out; */
 
   }
   
@@ -324,14 +335,16 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     
     .navbar a:hover {
         
-        background: linear-gradient(#ba9ef9,#cdb8fd);
-        
+        color: white;
+        overflow-x: hidden;
+        transform: translateY(-5px);
+        transition: all .1s ease-in;
+        letter-spacing: .1em;
         
     }
   /* Style the current/active link */
   .navbar a.active {
-     
-      background: linear-gradient(#ba9ef9,#cdb8fd);
+           font-weight: 600;
 
   }
  
