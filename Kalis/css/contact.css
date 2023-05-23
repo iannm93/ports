@@ -1,74 +1,80 @@
 @font-face {
-    font-family: 'Main';
+  font-family: 'Main';
 
-    src: url("../Synthemesc-W00-Regular.ttf");
-  }
-  h1{
-    font-family: 'Main';
-  }
-body{
-    background-color:#f8f4ff;
+  src: url("../Synthemesc-W00-Regular.ttf");
 }
+h1{
+  font-family: 'Main';
+}
+body{
+  background-color:#f8f4ff;
+}
+
+
+/* Navigation links */
 .navbar a {
-  /* float: left; */
-  /* padding: 12px; */
-  font-family: 'Poppins', sans-serif !important;
-  color: #8a72ff;
-  text-decoration: none;
-  font-size: 17px;
-  width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /*If you want the text to be centered*/
-    
-  /* transition: all 1s ease-out; */
+/* float: left; */
+/* padding: 12px; */
+font-family: 'Poppins', sans-serif !important;
+color: #8a72ff;
+text-decoration: none;
+font-size: 17px;
+width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
+text-align: center; /*If you want the text to be centered*/
+  
+/* transition: all 1s ease-out; */
 
 }
 
 
 /* Add a background color on mouse-over */
 .navbar a:hover {     
-  color: #4936b7;
-  overflow-x: hidden;
-  transform: translateY(-5px);
-  transition: all .1s ease-in;
-  font-weight: 600;
-  letter-spacing: .1em;
+color: #4936b7;
+overflow-x: hidden;
+transform: translateY(-5px);
+transition: all .1s ease-in;
+letter-spacing: .1em;
 }
 
 /* Style the current/active link */
 .navbar a.active {
-  font-weight: 600;
+font-weight: 600;
 }
-form{
-    margin: 0 auto;
-    width: 60%;
 
+form{
+  margin: 0 auto;
+  width: 60%;
+  font-family: 'poppins';
 }
 #input{
-    border-radius: 25px;
-    background-color: #ddd6ff;
-    font-weight: bolder;
+  border-radius: 25px;
+  background-color: #ddd6ff;
+  font-weight: bolder;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:  #573beb !important;
+  color:  #573beb !important;
 }
 #formButton{
-    border-radius: 25px;
-    width: 170px;
-    color: black;
-    border: 2px solid black;
-    background-color: #f8f4ff;
-    font-weight: 500;
+  border-radius: 25px;
+  width: 170px;
+  color: black;
+  border: 2px solid black;
+  background-color: #f8f4ff;
+  font-weight: 500;
 }
 
 #formButton:hover{
-    transform: scale(1.03) translateY(-3px);
-    transition: .3s ease-in;
+  transform: scale(1.03) translateY(-3px);
+  transition: .3s ease-in;
+  background-color: #573beb;
+  color: white;
+  border: white;
 }
 @media (max-width: 1364px){
-    form{
-        width: 70%;
-        
-    }
-  
+  form{
+      width: 70%;
+      
+  }
+
 }

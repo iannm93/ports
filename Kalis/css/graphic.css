@@ -39,6 +39,12 @@
   
 /* NABAR E */
 
+img{
+    border-radius: 5%;
+    object-fit: cover;
+  }
+  
+
 /* GRID S */
 .font-st{
     font-family: 'Main';
@@ -87,6 +93,18 @@
     color: #ba9ef9;
 }
 
+.purp{
+    color: #ba9ef9;
+}
+
+.purple:hover{
+    color: #4936b7;
+}
+
+.purp:hover{
+    color: #4936b7;
+}
+
 
 @media screen and (max-width: 1545px) {
     
@@ -101,9 +119,11 @@
         /* padding-top: 7em; */
     }
     #ui-ux{
-        width: 35%;
+        font-family: 'Poppins', sans-serif !important;
+        width: 25%;
     }
     #graphic-design{
+        font-family: 'Poppins', sans-serif !important;
         width: 25%;
     }
     
