@@ -297,43 +297,36 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
     padding: 0% 0% 0% 50%;
 }
 
-.navbar {
-    width: 100%;
-    background-color:#f8f4ff;
-
-    overflow: auto;
-  }
-  
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    padding: 12px;
-    color: black;
+.navbar a {
+    /* float: left; */
+    /* padding: 12px; */
+    font-family: 'Poppins', sans-serif !important;
+    color: #8a72ff;
     text-decoration: none;
     font-size: 17px;
     width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
-    background-color:#f8f4ff;
+    text-align: center; /*If you want the text to be centered*/
       
-    transition: all 1s ease-out;
-
+    /* transition: all 1s ease-out; */
+  
   }
   
+  
   /* Add a background color on mouse-over */
-
-    
-    .navbar a:hover {
-        
-        background: linear-gradient(#ba9ef9,#cdb8fd);
-        
-        
-    }
+  .navbar a:hover {     
+    color: #4936b7;
+    overflow-x: hidden;
+    transform: translateY(-5px);
+    transition: all .1s ease-in;
+    font-weight: 600;
+    letter-spacing: .1em;
+  }
+  
   /* Style the current/active link */
   .navbar a.active {
-     
-      background: linear-gradient(#ba9ef9,#cdb8fd);
-
+    font-weight: 600;
   }
+  
  
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 
