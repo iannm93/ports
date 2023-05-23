@@ -4,49 +4,47 @@
   src: url("../Synthemesc-W00-Regular.ttf");
 }
 .navbar {
-    width: 100%;
-    background-color: white;
-    overflow: auto;
-  }
-  
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    padding: 12px;
-    color: black;
-    text-decoration: none;
-    font-size: 17px;
-    width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /*If you want the text to be centered*/
-      
-    /* transition: all 1s ease-out; */
-  
-  }
-  
-  
-  /* Add a background color on mouse-over */
-  .navbar a:hover {     
-    color: #4936b7;
-    overflow-x: hidden;
-    transform: translateY(-5px);
-    transition: all .1s ease-in;
-    font-weight: 600;
-    letter-spacing: .1em;
-  }
-  
-  /* Style the current/active link */
-  .navbar a.active {
-background: linear-gradient(#ba9ef9,#cdb8fd);
+  width: 100%;
+  overflow: auto;
+}
 
-  }
+ /* Navigation links */
+ .navbar a {
+  /* float: left; */
+  /* padding: 12px; */
+  font-family: 'Poppins', sans-serif !important;
+  color: #150142;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /*If you want the text to be centered*/
+    
+  /* transition: all 1s ease-out; */
 
-  #background-image{
-    background-image: url("../img/meagain2.png");
-    min-height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-  }
+}
+
+
+/* Add a background color on mouse-over */
+.navbar a:hover {     
+  color: white;
+  overflow-x: hidden;
+  transform: translateY(-5px);
+  transition: all .1s ease-in;
+  letter-spacing: .1em;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  font-weight: 600;
+}
+
+#background-image{
+  background-image: url("../img/meagain2.png"); 
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
 
 h1{
   font-family: 'Main';
@@ -85,11 +83,6 @@ color: #150142;
 h5{
 font-family: 'poppins';
 font-size: 18px;
-}
-
-.socials:hover{
-  transform: translateY(-5px) scale(1.02);
-  transition: .3s all;
 }
 
 @media (max-width: 1562px){

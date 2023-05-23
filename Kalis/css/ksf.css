@@ -1,41 +1,57 @@
 @font-face {
-    font-family: 'Main';
+  font-family: 'Poppins';
+}
+h1{
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 100;
+}
 
-    src: url("../Synthemesc-W00-Regular.ttf");
-  }
-  h1{
-    font-family: 'Main';
-  }
+h2{
+  font-weight: 500;
+  font-size: 10px;
+}
+
+h3{
+  font-weight: bold;
+}
+
 body{
   background-color:#f8f4ff !important ;
 }
-.navbar {
-    width: 100%;
-    background-color: #f8f4ff;
-    overflow: auto;
-  }
+img{
+border-radius: 5%;
+}
+/* Navigation links */
+.navbar a {
+/* float: left; */
+/* padding: 12px; */
+font-family: 'Poppins', sans-serif !important;
+color: #8a72ff;
+text-decoration: none;
+font-size: 17px;
+width: 20%; /* Four equal-width links with icon in the center. If you have two links, use 50%, and 33.33% for three links, etc.. */
+text-align: center; /*If you want the text to be centered*/
   
-  /* Navigation links */
-  .navbar a {
-    float: left;
-    padding: 12px;
-    color: black;
-    text-decoration: none;
-    font-size: 17px;
-    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
-  }
-  
-  /* Add a background color on mouse-over */
-  .navbar a:hover {
-    background-color:linear-gradient(#ba9ef9,#cdb8fd) ;
-  }
-  
-  /* Style the current/active link */
-  .navbar a.active {
-background: linear-gradient(#ba9ef9,#cdb8fd);
+/* transition: all 1s ease-out; */
 
-  }
+}
+
+
+/* Add a background color on mouse-over */
+.navbar a:hover {     
+color: #4936b7;
+overflow-x: hidden;
+transform: translateY(-5px);
+transition: all .1s ease-in;
+font-weight: 600;
+letter-spacing: .1em;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+font-weight: 600;
+}
 
 
 .body-container{
@@ -45,21 +61,28 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
   background-color: #f8f4ff;
 }
 #pop{
-    width: 700px;
-    height:  469.7px;
-    background-color: blue;
+  width: 700px;
+  height:  469.7px;
 
 }
-#dropouts-mock{
-    object-fit: cover;
+#ksf-mock{
+  object-fit: cover;
+  margin-top: 2em;
+  border-radius: 5%;
 }
 
 #grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    gap: 1em;
-    background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 1em;
+}
+#grid2{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+width: 100%;
+gap: 1em;
 }
 @media (max-width: 871px){
   .body-container{
@@ -72,3 +95,39 @@ background: linear-gradient(#ba9ef9,#cdb8fd);
       grid-template-columns: repeat(1, 1fr);
   }
 }
+p{
+font-family: 'poppins';
+}
+button{
+border: none;
+font-family: 'poppins';
+background-color: transparent;
+font-weight: bold;
+}
+button:hover{
+color: #ba9ef9;
+border-bottom: #ba9ef9;
+font-weight: bolder;
+}
+#formButton{
+font-family: 'Poppins';
+border-radius: 25px;
+width: 170px;
+color: black;
+border: 2px solid black;
+background-color: #f8f4ff;
+font-weight: ;
+}
+
+#formButton:hover{
+transform: scale(1.03) translateY(-3px);
+transition: .3s ease-in;
+background-color: #573beb;
+color: white;
+border: white;
+}
+#buttons{
+align-content: center;
+justify-content: center;
+
+} 

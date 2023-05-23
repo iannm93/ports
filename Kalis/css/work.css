@@ -28,7 +28,7 @@
   
   }
   
-  
+
   /* Add a background color on mouse-over */
   .navbar a:hover {     
     color: #4936b7;
@@ -139,4 +139,7 @@
        margin: 0 auto;
     }
 }
+img{
+    object-fit: cover !important;
+  }
 /* GRID E */
