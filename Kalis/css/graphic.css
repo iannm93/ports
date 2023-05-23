@@ -41,6 +41,7 @@
 
 img{
     border-radius: 5%;
+    object-fit: cover;
   }
   
 
@@ -157,8 +158,8 @@ img{
     }
 }
 .img7{
-    height: 300px;
-    width: 447px;
+    height: 351.75px;
+    width: 525px;
 }
 #card1:hover>#img7 {
     transform: scale(1.02);
