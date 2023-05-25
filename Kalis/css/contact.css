@@ -56,7 +56,7 @@ form{
   color:  #573beb !important;
 }
 #formButton{
-  border-radius: 25px;
+  border-radius: 0 !important;
   width: 170px;
   color: black;
   border: 2px solid black;

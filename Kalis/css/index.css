@@ -11,6 +11,7 @@ img{
   body{
     background-color:#f8f4ff;
     overflow-x: hidden;
+    padding-bottom: 50px;
 }
 
 nav{
@@ -88,6 +89,12 @@ h1{
 /* Created with https://www.css-gradient.com */
 /* Created with https://www.css-gradient.com */
 background: linear-gradient(#ba9ef9,#cdb8fd);
+}
+
+a:hover{
+    transform: scale(1.02);
+    transition: 500ms;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 @media (max-width: 890px){
     #box{

@@ -39,6 +39,10 @@
   
 /* NABAR E */
 
+body{
+    padding-bottom: 50px;
+}
+
 img{
     border-radius: 5%;
     object-fit: cover;
@@ -182,4 +186,5 @@ a:hover{
     box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 
 }
+
 /* GRID E */
